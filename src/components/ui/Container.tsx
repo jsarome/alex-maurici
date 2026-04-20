@@ -1,0 +1,23 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  as?: React.ElementType;
+}
+
+export const Container = ({
+  as: Component = "div",
+  className,
+  ...props
+}: ContainerProps) => {
+  return (
+    <Component
+      className={cn("max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", className)}
+      {...props}
+    />
+  );
+};
