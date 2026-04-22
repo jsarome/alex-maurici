@@ -46,13 +46,13 @@ const FAQAccordion = ({ question, answer }: { question: string; answer: string }
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200 py-6">
+    <div className="border-b border-white/10 py-6">
       <button 
         className="flex w-full items-center justify-between text-left group"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Typography variant="h4" className="text-lg group-hover:text-primary transition-colors">{question}</Typography>
-        <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-muted transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -63,7 +63,7 @@ const FAQAccordion = ({ question, answer }: { question: string; answer: string }
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <Typography variant="body" className="pt-4 text-gray-600">
+            <Typography variant="body" className="pt-4 text-muted">
               {answer}
             </Typography>
           </motion.div>
@@ -117,7 +117,7 @@ export default function Servicios() {
             subtitle="Todo lo que necesitás saber antes de empezar la transformación digital de tu negocio."
             centered
           />
-          <div className="mt-12 bg-white rounded-3xl p-8 shadow-sm">
+          <div className="mt-12 bg-secondary/30 backdrop-blur-sm border border-white/5 rounded-3xl p-8 md:p-12">
             {faqs.map(faq => (
               <FAQAccordion key={faq.question} {...faq} />
             ))}
