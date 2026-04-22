@@ -23,7 +23,17 @@ export default function Contacto() {
                 </div>
                 <div>
                   <Typography variant="h4" className="mb-1 text-sm uppercase tracking-widest text-muted">Email</Typography>
-                  <Typography variant="body" className="font-bold text-lg">contacto@growintell.com</Typography>
+                  <Typography variant="body" className="font-bold text-lg">hola@alexmaurici.com</Typography>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-6">
+                <div className="bg-primary/10 p-4 rounded-2xl text-primary">
+                  <Phone className="w-6 h-6" />
+                </div>
+                <div>
+                  <Typography variant="h4" className="mb-1 text-sm uppercase tracking-widest text-muted">Teléfono</Typography>
+                  <Typography variant="body" className="font-bold text-lg">+376 363683</Typography>
                 </div>
               </div>
               
@@ -32,8 +42,8 @@ export default function Contacto() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <Typography variant="h4" className="mb-1 text-sm uppercase tracking-widest text-muted">Atención</Typography>
-                  <Typography variant="body" className="font-bold text-lg">Remoto para todo el mundo</Typography>
+                  <Typography variant="h4" className="mb-1 text-sm uppercase tracking-widest text-muted">Ubicación</Typography>
+                  <Typography variant="body" className="font-bold text-lg">Santa Coloma - Andorra</Typography>
                 </div>
               </div>
             </div>
@@ -64,7 +74,7 @@ export default function Contacto() {
                 <label className="text-sm font-bold text-gray-700">Email Corporativo</label>
                 <input 
                   type="email" 
-                  placeholder="ejemplo@growintell.com"
+                  placeholder="ejemplo@correo.com"
                   className="w-full px-4 py-3 rounded-brand bg-gray-50 border focus:border-primary outline-none transition-all"
                 />
               </div>

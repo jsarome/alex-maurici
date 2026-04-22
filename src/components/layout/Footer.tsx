@@ -63,7 +63,7 @@ export const Footer = () => {
                 </div>
                 <div className="overflow-hidden">
                   <p className="text-gray-500 text-xs uppercase font-bold tracking-widest mb-0.5">Email</p>
-                  <p className="text-gray-300 group-hover:text-white transition-colors truncate text-sm">amaurici@futurodigital.com.ar</p>
+                  <p className="text-gray-300 group-hover:text-white transition-colors truncate text-sm">hola@alexmaurici.com</p>
                 </div>
               </li>
               <li className="flex items-center space-x-4 group">

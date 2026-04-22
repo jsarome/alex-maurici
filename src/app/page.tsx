@@ -19,7 +19,7 @@ export default function Home() {
             Empresas que ya optimizaron sus procesos
           </Typography>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale opacity-30 hover:opacity-100 transition-all duration-500 px-4">
-            <span className="text-xl md:text-2xl font-black italic text-white tracking-tighter">GROWINTEL</span>
+            <span className="text-xl md:text-2xl font-black italic text-white tracking-tighter">FUTURO DIGITAL</span>
             <span className="text-xl md:text-2xl font-black italic text-white tracking-tighter">TECHNOVA</span>
             <span className="text-xl md:text-2xl font-black italic text-white tracking-tighter">NEXUS AI</span>
             <span className="text-xl md:text-2xl font-black italic text-white tracking-tighter">SYSTEMA</span>
