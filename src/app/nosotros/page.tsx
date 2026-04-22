@@ -1,12 +1,8 @@
+"use client";
+
 import { Container } from "@/components/ui/Container";
 import { Typography, SectionTitle } from "@/components/ui/Typography";
 import { Mail, Phone, MapPin, Send, Zap, Award, CheckCircle2, User, Target, Rocket } from "lucide-react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Nosotros | Alex Maurici",
-  description: "Conocé la historia y el enfoque de ingeniería detrás de Alex Maurici IA.",
-};
 
 export default function Nosotros() {
   return (
